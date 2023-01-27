@@ -1,0 +1,46 @@
+:root {
+  --dark: #6f6d7d;
+  --success: #47be7d;
+  --warning: #f4de6d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1300px;
+}
+
+.main-nav {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.text-dark {
+  color: var(--dark) !important;
+}
+
+.bg-success {
+  background-color: var(--success) !important;
+}
+
+.btn {
+  padding: 0.6rem 15px;
+  border-radius: 10px;
+}
+
+.bg-warning {
+  background-color: var(--warning) !important;
+}
+
+.card {
+  padding: 2rem;
+}
