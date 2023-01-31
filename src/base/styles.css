@@ -2,6 +2,9 @@
   --dark: #6f6d7d;
   --success: #47be7d;
   --warning: #f4de6d;
+  --text-gray: #b5bac9;
+  --text-dark: #3f4254;
+  --text-secondary: #0095e8;
 }
 
 * {
@@ -28,6 +31,10 @@ a {
   color: var(--dark) !important;
 }
 
+.text-gray {
+  color: var(--text-gray);
+}
+
 .bg-success {
   background-color: var(--success) !important;
 }
@@ -43,4 +50,36 @@ a {
 
 .card {
   padding: 2rem;
+  min-width: 135px;
+  max-height: 175px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.py-6 {
+  padding: 80px 0;
+}
+
+.fs-7 {
+  font-size: smaller;
+}
+
+h4,
+h6 {
+  margin-bottom: 0;
+}
+
+.text-dark {
+  color: var(--text-dark) !important;
+}
+
+.text-secondary {
+  color: var(--text-secondary) !important;
+}
+
+.rounded-4 {
+  border-radius: 10px;
 }
