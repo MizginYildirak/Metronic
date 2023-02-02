@@ -27,13 +27,23 @@
 
     <!-- link css -->
 
-    <link rel="stylesheet" href="./src/base/styles.css">
+    <link rel="stylesheet" href="./src/base/styles.css" />
 
-    <!-- tiny carousel -->
+    <!-- owl carousel -->
 
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
   </head>
 
@@ -66,7 +76,7 @@
       </div>
     </nav>
 
-    <div class="bg-warning  d-flex align-items-center" style="height: 200px">
+    <div class="bg-warning d-flex align-items-center" style="height: 200px">
       <div class="container">
         <span class="fs-2 fw-bold">POS System</span>
       </div>
@@ -147,9 +157,6 @@
               </a>
             </div>
           </div>
-
-
-
 
           <div class="row d-flex flex-wrap justify-content-center">
             <div class="col-3 p-4">
@@ -445,6 +452,125 @@
       </div>
     </div>
 
+<div class="container">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active d-flex">
+          <img src="https://keenthemes.com/metronic/assets/media/testimonails/aspnetzero/team.png" class="d-block w-100" alt="...">
+          <p>
+            “Metronic was one of the best decisions we made when we started
+            developing ASP.NET Zero. As .NET backend developers, Metronic was so
+            easy-to-use and streamlined our development processes whilst making
+            it possible for us to create a good-looking, stable and
+            user-friendly frontend. Metronic helped us to reach the market
+            quickly, which was one of the key points of our success.
+            <br /><br />
+            Additionally, Metronic has different UI options like Angular,
+            Blazor, React, etc... and many components which are used by industry
+            leader enterprise app. This also allowed us to develop our app with
+            no need to use a component library. Another good point is, Metronic
+            has very thorough documentation and many real-life samples. When we
+            needed to develop a new feature, documentation and samples helped us
+            in a great manner.“
+          </p>
+        </div>
+
+
+        <div class="carousel-item">
+          <img src="https://keenthemes.com/metronic/assets/media/testimonails/retailgear/team.png" class="d-block w-100" alt="...">
+          <p>
+            “Metronic was one of the best decisions we made when we started
+            developing ASP.NET Zero. As .NET backend developers, Metronic was so
+            easy-to-use and streamlined our development processes whilst making
+            it possible for us to create a good-looking, stable and
+            user-friendly frontend. Metronic helped us to reach the market
+            quickly, which was one of the key points of our success.
+            <br /><br />
+            Additionally, Metronic has different UI options like Angular,
+            Blazor, React, etc... and many components which are used by industry
+            leader enterprise app. This also allowed us to develop our app with
+            no need to use a component library. Another good point is, Metronic
+            has very thorough documentation and many real-life samples. When we
+            needed to develop a new feature, documentation and samples helped us
+            in a great manner.“
+          </p>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+
+
+
+
+
+    <!-- <div class="container">
+      <div class="owl-carousel">
+        <div class="d-flex">
+          <img
+            src="https://keenthemes.com/metronic/assets/media/testimonails/aspnetzero/team.png"
+            alt=""
+          />
+          <p>
+            “Metronic was one of the best decisions we made when we started
+            developing ASP.NET Zero. As .NET backend developers, Metronic was so
+            easy-to-use and streamlined our development processes whilst making
+            it possible for us to create a good-looking, stable and
+            user-friendly frontend. Metronic helped us to reach the market
+            quickly, which was one of the key points of our success.
+            <br /><br />
+            Additionally, Metronic has different UI options like Angular,
+            Blazor, React, etc... and many components which are used by industry
+            leader enterprise app. This also allowed us to develop our app with
+            no need to use a component library. Another good point is, Metronic
+            has very thorough documentation and many real-life samples. When we
+            needed to develop a new feature, documentation and samples helped us
+            in a great manner.“
+          </p>
+        </div>
+
+        <div class="d-flex">
+          <img
+            src="https://keenthemes.com/metronic/assets/media/testimonails/retailgear/team.png"
+            alt=""
+          />
+          <p>
+            “Metronic was one of the best decisions we made when we started
+            developing ASP.NET Zero. As .NET backend developers, Metronic was so
+            easy-to-use and streamlined our development processes whilst making
+            it possible for us to create a good-looking, stable and
+            user-friendly frontend. Metronic helped us to reach the market
+            quickly, which was one of the key points of our success.
+            <br /><br />
+            Additionally, Metronic has different UI options like Angular,
+            Blazor, React, etc... and many components which are used by industry
+            leader enterprise app. This also allowed us to develop our app with
+            no need to use a component library. Another good point is, Metronic
+            has very thorough documentation and many real-life samples. When we
+            needed to develop a new feature, documentation and samples helped us
+            in a great manner.“
+          </p>
+        </div>
+      </div>
+    </div> -->
+
+
+
+
+
     <div class="container">
       <div class="row justify-content-between text-dark">
         <div class="col-4 rounded border border-dashed p-5">
@@ -481,27 +607,45 @@
           <div class="d-flex flex-column gap-3">
             <h5>Stay Connected</h5>
             <a class="text-muted" href="">
-              <img src="https://keenthemes.com/metronic/assets/media/svg/social-logos/youtube.svg" alt="">
+              <img
+                src="https://keenthemes.com/metronic/assets/media/svg/social-logos/youtube.svg"
+                alt=""
+              />
               Youtube
             </a>
-           <a class="text-muted" href="">
-              <img src="https://keenthemes.com/metronic/assets/media/svg/social-logos/github.svg" alt="">
+            <a class="text-muted" href="">
+              <img
+                src="https://keenthemes.com/metronic/assets/media/svg/social-logos/github.svg"
+                alt=""
+              />
               Github
             </a>
-           <a class="text-muted" href="">
-              <img src="https://keenthemes.com/metronic/assets/media/svg/social-logos/twitter.svg" alt="">
+            <a class="text-muted" href="">
+              <img
+                src="https://keenthemes.com/metronic/assets/media/svg/social-logos/twitter.svg"
+                alt=""
+              />
               Twitter
             </a>
-           <a class="text-muted" href="">
-              <img src="https://keenthemes.com/metronic/assets/media/svg/social-logos/instagram.svg" alt="">
+            <a class="text-muted" href="">
+              <img
+                src="https://keenthemes.com/metronic/assets/media/svg/social-logos/instagram.svg"
+                alt=""
+              />
               Instagram
             </a>
-           <a class="text-muted" href="">
-              <img src="https://keenthemes.com/metronic/assets/media/svg/social-logos/linkedin.svg" alt="">
+            <a class="text-muted" href="">
+              <img
+                src="https://keenthemes.com/metronic/assets/media/svg/social-logos/linkedin.svg"
+                alt=""
+              />
               Linkedin
             </a>
-           <a class="text-muted" href="">
-              <img src="https://keenthemes.com/metronic/assets/media/svg/social-logos/dribbble.svg" alt="">
+            <a class="text-muted" href="">
+              <img
+                src="https://keenthemes.com/metronic/assets/media/svg/social-logos/dribbble.svg"
+                alt=""
+              />
               Dribble
             </a>
           </div>
@@ -510,16 +654,39 @@
     </div>
 
     <div class="container d-flex justify-content-between py-4 bg-footer">
-      <img src="https://keenthemes.com/metronic/assets/media/logos/keenthemes.svg" alt="">
+      <img
+        src="https://keenthemes.com/metronic/assets/media/logos/keenthemes.svg"
+        alt=""
+      />
       <div class="d-flex gap-4">
-         <a class="text-muted text-hover-primary" href="">KeenThemes</a>
-         <a class="text-muted" href="">Contact Us</a>
-         <a class="text-muted" href="">Hire Experts</a>
+        <a class="text-muted text-hover-primary" href="">KeenThemes</a>
+        <a class="text-muted" href="">Contact Us</a>
+        <a class="text-muted" href="">Hire Experts</a>
       </div>
     </div>
   </body>
 
-  <!-- carousel js -->
+  <!-- jquery cdn -->
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+    integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+
+  <!-- owl carousel js -->
+
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+
+  <script>
+    $(document).ready(function () {
+      $(".owl-carousel").owlCarousel();
+    });
+  </script>
 </html>
