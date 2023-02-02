@@ -6,12 +6,18 @@
   --text-dark: #3f4254;
   --text-secondary: #0095e8;
   --bg-scondary: #0095e8;
+  --bg-body: ##f9f9f9;
+  --bg-footer: 	#ffffff;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-body);
 }
 
 .container {
@@ -91,4 +97,13 @@ h6 {
 
 .text-hover-primary:hover {
   color: var(--text-secondary);
+}
+
+.border-dashed {
+  border-style: dashed !important;
+  color: var(--dark);
+}
+
+.bg-footer {
+  background-color: var(--bg-footer) !important;
 }
