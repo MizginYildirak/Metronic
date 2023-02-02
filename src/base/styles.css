@@ -1,0 +1,94 @@
+:root {
+  --dark: #6f6d7d;
+  --success: #47be7d;
+  --warning: #f4de6d;
+  --text-gray: #b5bac9;
+  --text-dark: #3f4254;
+  --text-secondary: #0095e8;
+  --bg-scondary: #0095e8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1300px;
+}
+
+.main-nav {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.text-dark {
+  color: var(--dark) !important;
+}
+
+.text-gray {
+  color: var(--text-gray);
+}
+
+.bg-success {
+  background-color: var(--success) !important;
+}
+
+.btn {
+  padding: 0.6rem 15px;
+  border-radius: 10px;
+}
+
+.bg-warning {
+  background-color: var(--warning) !important;
+}
+
+.card {
+  padding: 2rem;
+  min-width: 135px;
+  max-height: 175px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.py-6 {
+  padding: 80px 0;
+}
+
+.fs-7 {
+  font-size: smaller;
+}
+
+h4,
+h6 {
+  margin-bottom: 0;
+}
+
+.text-dark {
+  color: var(--text-dark) !important;
+}
+
+.text-secondary {
+  color: var(--text-secondary) !important;
+}
+
+.bg-secondary {
+  background-color: var(--bg-scondary) !important;
+}
+
+.rounded-4 {
+  border-radius: 10px;
+}
+
+.text-hover-primary:hover {
+  color: var(--text-secondary);
+}
