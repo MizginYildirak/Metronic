@@ -9,9 +9,9 @@
     <!-- Bootstrap CSS -->
 
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
 
@@ -52,6 +52,75 @@
 
     <nav class="main-nav">
       <div class="container d-flex justify-content-between align-items-center">
+        <nav class="navbar d-block d-lg-none">
+          <div class="container-fluid">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasDarkNavbar"
+              aria-controls="offcanvasDarkNavbar"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="offcanvas offcanvas-end text-bg-light"
+              tabindex="-1"
+              id="offcanvasDarkNavbar"
+              aria-labelledby="offcanvasDarkNavbarLabel"
+            >
+  
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"
+                      >Metronic 8</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"
+                      >All Docs</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"
+                      >Changelog</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      More
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Another action</a>
+                      </li>
+                      <li>
+                        <hr class="dropdown-divider" />
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+
         <div class="navbar-brand">
           <img
             src="https://keenthemes.com/metronic/assets/media/logos/launcher.svg"
@@ -60,15 +129,36 @@
           />
         </div>
         <ul
-          class="d-flex justify-content-center align-items-center m-0 list-unstyled gap-5 fw-bold"
+          class="d-none d-lg-flex justify-content-center align-items-center m-0 list-unstyled gap-5 fw-bold"
         >
-          <li><a class="text-dark" href="">Metronic 8</a></li>
-          <li><a class="text-dark" href="">All Docs</a></li>
-          <li><a class="text-dark" href="">Changelog</a></li>
-          <li><a class="text-dark" href="">Downloads</a></li>
-          <li><a class="text-dark" href="">More</a></li>
+          <li class="menu-list-hover p-2">
+            <a class="text-dark" href="">Metronic 8</a>
+          </li>
+          <li class="menu-list-hover p-2">
+            <a class="text-dark" href="">All Docs</a>
+          </li>
+          <li class="menu-list-hover p-2">
+            <a class="text-dark" href="">Changelog</a>
+          </li>
+          <li class="menu-list-hover p-2">
+            <a class="text-dark" href="">Downloads</a>
+          </li>
+          <li class="menu-list-hover sub-menu-tab p-2">
+            <a class="text-dark menu" href="">More</a>
+            <ul class="sub-menu d-flex flex-column list-unstyled p-4 text-dark">
+              <li><a class="text-dark" href="">Metronic 7</a></li>
+              <li><a class="text-dark" href="">Github Access</a></li>
+              <li><a class="text-dark" href="">Hire Experts</a></li>
+              <li><a class="text-dark" href="">Contact Us</a></li>
+            </ul>
+          </li>
         </ul>
-        <div class="btn bg-success">
+
+        <div class="btn bg-success d-block d-lg-none">
+          <a class="text-decoration-none fw-bold text-light" href="">Buy</a>
+        </div>
+
+        <div class="btn bg-success d-none d-lg-block">
           <a class="text-decoration-none fw-bold text-light" href=""
             >Buy Metronic</a
           >
@@ -82,10 +172,10 @@
       </div>
     </div>
 
-    <div class="container d-flex py-6">
-      <div class="row">
-        <div class="first-content col-8">
-          <div class="cards d-flex gap-4 mb-5">
+    <div class="container py-6">
+      <div class="row d-lg-flex">
+        <div class="first-content col-12 col-lg-8">
+          <div class="cards d-flex gap-4 mb-5 flex-wrap align-items-center justify-content-between">
             <div class="border border-3 rounded-4 card">
               <a
                 class="d-flex flex-column justify-content-center align-items-center"
@@ -158,8 +248,8 @@
             </div>
           </div>
 
-          <div class="row d-flex flex-wrap justify-content-center">
-            <div class="col-3 p-4">
+          <div class="row flex-wrap justify-content-center">
+            <div class="col-4 p-4">
               <div
                 class="d-flex justify-content-center align-items-center flex-column"
               >
@@ -178,7 +268,7 @@
               </div>
             </div>
 
-            <div class="col-3 p-4">
+            <div class="col-4 p-4">
               <div
                 class="d-flex justify-content-center align-items-center flex-column"
               >
@@ -197,7 +287,7 @@
               </div>
             </div>
 
-            <div class="col-3 p-4">
+            <div class="col-4 p-4">
               <div
                 class="d-flex justify-content-center align-items-center flex-column"
               >
@@ -216,7 +306,7 @@
               </div>
             </div>
 
-            <div class="col-3 p-4">
+            <div class="col-4 p-4">
               <div
                 class="d-flex justify-content-center align-items-center flex-column"
               >
@@ -235,7 +325,7 @@
               </div>
             </div>
 
-            <div class="col-3 p-4">
+            <div class="col-4 p-4">
               <div
                 class="d-flex justify-content-center align-items-center flex-column"
               >
@@ -254,7 +344,7 @@
               </div>
             </div>
 
-            <div class="col-3 p-4">
+            <div class="col-4 p-4">
               <div
                 class="d-flex justify-content-center align-items-center flex-column"
               >
@@ -273,7 +363,7 @@
               </div>
             </div>
 
-            <div class="col-3 p-4">
+            <div class="col-4 p-4">
               <div
                 class="d-flex justify-content-center align-items-center flex-column"
               >
@@ -292,7 +382,7 @@
               </div>
             </div>
 
-            <div class="col-3 p-4">
+            <div class="col-4 p-4">
               <div
                 class="d-flex justify-content-center align-items-center flex-column"
               >
@@ -311,7 +401,7 @@
               </div>
             </div>
 
-            <div class="col-3 p-4">
+            <div class="col-4 p-4">
               <div
                 class="d-flex justify-content-center align-items-center flex-column"
               >
@@ -332,7 +422,7 @@
           </div>
         </div>
 
-        <div class="second-content col-4">
+        <div class="second-content col-12 col-lg-4">
           <div class="d-flex align-items-center justify-content-between">
             <h3>Current Order</h3>
             <div>Clear All</div>
@@ -350,13 +440,13 @@
                 <span>T-bone Stake</span>
               </div>
               <div class="d-flex align-items-center">
-                <div>
-                  <a href=""><i class="fa-solid fa-minus"></i></a>
-                </div>
-                <span>2</span>
-                <div>
-                  <a href=""><i class="fa-solid fa-plus"></i></a>
-                </div>
+                <button type="button" class="text-gray">
+                  <i class="fa-solid fa-minus fs-4 px-1"></i>
+                </button>
+                <span class="px-2">2</span>
+                <button type="button" class="text-gray">
+                  <i class="fa-solid fa-plus fs-4 px-1"></i>
+                </button>
               </div>
               <span class="text-secondary fw-bold fs-4">$66.00</span>
             </div>
@@ -372,13 +462,13 @@
                 <span>Soup of the Day</span>
               </div>
               <div class="d-flex align-items-center">
-                <div>
-                  <a href=""><i class="fa-solid fa-minus"></i></a>
-                </div>
-                <span>1</span>
-                <div>
-                  <a href=""><i class="fa-solid fa-plus"></i></a>
-                </div>
+                <button type="button" class="text-gray">
+                  <i class="fa-solid fa-minus fs-4 px-1"></i>
+                </button>
+                <span class="px-2">1</span>
+                <button type="button" class="text-gray">
+                  <i class="fa-solid fa-plus fs-4 px-1"></i>
+                </button>
               </div>
               <span class="text-secondary fw-bold fs-4">$7.50</span>
             </div>
@@ -394,13 +484,13 @@
                 <span>Pancakes</span>
               </div>
               <div class="d-flex align-items-center">
-                <div>
-                  <a href=""><i class="fa-solid fa-minus"></i></a>
-                </div>
-                <span>2</span>
-                <div>
-                  <a href=""><i class="fa-solid fa-plus"></i></a>
-                </div>
+                <button type="button" class="text-gray">
+                  <i class="fa-solid fa-minus fs-4 px-1"></i>
+                </button>
+                <span class="px-2">2</span>
+                <button type="button" class="text-gray">
+                  <i class="fa-solid fa-plus fs-4 px-1"></i>
+                </button>
               </div>
               <span class="text-secondary fw-bold fs-4">$27.00</span>
             </div>
@@ -452,70 +542,88 @@
       </div>
     </div>
 
-<div class="container">
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active d-flex">
-          <img src="https://keenthemes.com/metronic/assets/media/testimonails/aspnetzero/team.png" class="d-block w-100" alt="...">
-          <p>
-            “Metronic was one of the best decisions we made when we started
-            developing ASP.NET Zero. As .NET backend developers, Metronic was so
-            easy-to-use and streamlined our development processes whilst making
-            it possible for us to create a good-looking, stable and
-            user-friendly frontend. Metronic helped us to reach the market
-            quickly, which was one of the key points of our success.
-            <br /><br />
-            Additionally, Metronic has different UI options like Angular,
-            Blazor, React, etc... and many components which are used by industry
-            leader enterprise app. This also allowed us to develop our app with
-            no need to use a component library. Another good point is, Metronic
-            has very thorough documentation and many real-life samples. When we
-            needed to develop a new feature, documentation and samples helped us
-            in a great manner.“
-          </p>
+    <div class="container">
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
         </div>
 
+        <div class="carousel-inner">
+          <div
+            class="carousel-item active d-flex bg-warning justify-content-center mb-5"
+          >
+            <img
+              src="https://keenthemes.com/metronic/assets/media/testimonails/aspnetzero/team.png"
+              class="d-block w-100"
+              alt="..."
+              style="max-width: 35%"
+            />
+            <p class="p-5 fs-5 text-dark">
+              “Metronic was one of the best decisions we made when we started
+              developing ASP.NET Zero. As .NET backend developers, Metronic was
+              so easy-to-use and streamlined our development processes whilst
+              making it possible for us to create a good-looking, stable and
+              user-friendly frontend. Metronic helped us to reach the market
+              quickly, which was one of the key points of our success.
+              <br /><br />
+              Additionally, Metronic has different UI options like Angular,
+              Blazor, React, etc... and many components which are used by
+              industry leader enterprise app. This also allowed us to develop
+              our app with no need to use a component library. Another good
+              point is, Metronic has very thorough documentation and many
+              real-life samples. When we needed to develop a new feature,
+              documentation and samples helped us in a great manner.“
+            </p>
+          </div>
 
-        <div class="carousel-item">
-          <img src="https://keenthemes.com/metronic/assets/media/testimonails/retailgear/team.png" class="d-block w-100" alt="...">
-          <p>
-            “Metronic was one of the best decisions we made when we started
-            developing ASP.NET Zero. As .NET backend developers, Metronic was so
-            easy-to-use and streamlined our development processes whilst making
-            it possible for us to create a good-looking, stable and
-            user-friendly frontend. Metronic helped us to reach the market
-            quickly, which was one of the key points of our success.
-            <br /><br />
-            Additionally, Metronic has different UI options like Angular,
-            Blazor, React, etc... and many components which are used by industry
-            leader enterprise app. This also allowed us to develop our app with
-            no need to use a component library. Another good point is, Metronic
-            has very thorough documentation and many real-life samples. When we
-            needed to develop a new feature, documentation and samples helped us
-            in a great manner.“
-          </p>
+          <div class="carousel-item">
+            <div class="carousel-item active d-flex bg-warning">
+              <img
+                class="w-25"
+                src="https://keenthemes.com/metronic/assets/media/testimonails/retailgear/team.png"
+                class="d-block w-100"
+                alt="..."
+                style="width: 35%"
+              />
+              <p class="p-5 fs-5">
+                “Metronic was one of the best decisions we made when we started
+                developing ASP.NET Zero. As .NET backend developers, Metronic
+                was so easy-to-use and streamlined our development processes
+                whilst making it possible for us to create a good-looking,
+                stable and user-friendly frontend. Metronic helped us to reach
+                the market quickly, which was one of the key points of our
+                success.
+                <br /><br />
+                Additionally, Metronic has different UI options like Angular,
+                Blazor, React, etc... and many components which are used by
+                industry leader enterprise app. This also allowed us to develop
+                our app with no need to use a component library. Another good
+                point is, Metronic has very thorough documentation and many
+                real-life samples. When we needed to develop a new feature,
+                documentation and samples helped us in a great manner.“
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
     </div>
-  </div>
-
-
-
-
-
 
     <!-- <div class="container">
       <div class="owl-carousel">
@@ -567,13 +675,9 @@
       </div>
     </div> -->
 
-
-
-
-
     <div class="container">
       <div class="row justify-content-between text-dark">
-        <div class="col-4 rounded border border-dashed p-5">
+        <div class="col-12 col-lg-4 rounded border border-dashed p-5">
           <h5>Would you need</h5>
           <h4>a Custom License ?</h4>
           <p class="fs-7 pt-3 text-muted">
@@ -583,7 +687,7 @@
           <a class="btn btn-success" href="">Contact Us</a>
         </div>
 
-        <div class="col-4 rounded border border-dashed p-5">
+        <div class="col-12 col-lg-4 rounded border border-dashed p-5">
           <h5>How about</h5>
           <h4>a Custom Project ?</h4>
           <p class="fs-7 pt-3 text-muted">
@@ -594,7 +698,7 @@
           <a class="btn btn-primary" href="">Hire Experts</a>
         </div>
 
-        <div class="col-4 d-flex justify-content-between">
+        <div class="col-12 col-lg-4 d-flex justify-content-between">
           <div class="d-flex flex-column gap-3">
             <h5>More for Metronic</h5>
             <a class="text-muted" href="">Support</a>
@@ -653,7 +757,7 @@
       </div>
     </div>
 
-    <div class="container d-flex justify-content-between py-4 bg-footer">
+    <div class="container d-md-flex flex-column-reverse justify-content-between py-4 bg-footer ">
       <img
         src="https://keenthemes.com/metronic/assets/media/logos/keenthemes.svg"
         alt=""
@@ -689,4 +793,10 @@
       $(".owl-carousel").owlCarousel();
     });
   </script>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"
+  ></script>
 </html>
