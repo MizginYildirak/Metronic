@@ -1,0 +1,174 @@
+:root {
+  --dark: #6f6d7d;
+  --success: #47be7d;
+  --warning: #f4de6d;
+  --text-gray: #b5bac9;
+  --text-dark: #3f4254;
+  --text-secondary: #0095e8;
+  --bg-scondary: #0095e8;
+  --bg-body: ##f9f9f9;
+  --bg-footer: #ffffff;
+  --menu-list-gray: #f0f1f2;
+  --methods-color: #0095e8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-body);
+}
+
+.container {
+  max-width: 1350px !important;
+}
+
+.main-nav {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.text-dark {
+  color: var(--dark) !important;
+}
+
+.text-gray {
+  color: var(--text-gray);
+}
+
+.bg-success {
+  background-color: var(--success) !important;
+}
+
+.btn {
+  padding: 0.6rem 15px;
+  border-radius: 10px;
+}
+
+.bg-warning {
+  background-color: var(--warning) !important;
+}
+
+.card {
+  padding: 2rem;
+  min-width: 135px;
+  max-height: 175px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.py-6 {
+  padding: 80px 0;
+}
+
+.fs-7 {
+  font-size: smaller;
+}
+
+h4,
+h6 {
+  margin-bottom: 0;
+}
+
+.text-dark {
+  color: var(--text-dark) !important;
+}
+
+.text-secondary {
+  color: var(--text-secondary) !important;
+}
+
+.bg-secondary {
+  background-color: var(--bg-scondary) !important;
+}
+
+.rounded-4 {
+  border-radius: 10px;
+}
+
+.text-hover-primary:hover {
+  color: var(--text-secondary);
+}
+
+.border-dashed {
+  border-style: dashed !important;
+  color: var(--dark);
+}
+
+.bg-footer {
+  background-color: var(--bg-footer) !important;
+}
+
+.menu-list-hover:hover {
+  background-color: var(--menu-list-gray);
+  border-radius: 10px;
+}
+
+.sub-menu-tab {
+  position: relative;
+}
+
+.sub-menu {
+  position: absolute;
+  transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transform: translate(-10px, 30px);
+  width: 200px;
+  pointer-events: none;
+  opacity: 0;
+  background-color: #f9f9f9;
+  gap: 28px;
+}
+
+.sub-menu-tab:hover > .sub-menu {
+  pointer-events: auto;
+  opacity: 1;
+  transform: translate(-10px, 10px);
+}
+
+.order {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-items: center;
+}
+
+.method:hover {
+  background-color: var(--methods-color);
+}
+
+.more-metronic {
+  background-color: #f9f9f9;
+}
+
+.footer img {
+  width: 150px;
+}
+
+@media only screen and (max-width: 992px) {
+  .food {
+    width: 50% !important;
+  }
+
+  .carouselExampleIndicators {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .footer {
+    background-color: white;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+}
