@@ -155,6 +155,11 @@ h6 {
 }
 
 @media only screen and (max-width: 992px) {
+  .container {
+    padding-right: 18px;
+    padding-left: 18px;
+  }
+
   .food {
     width: 50% !important;
   }
